@@ -1,5 +1,5 @@
 name, description = ARGV
-prompt = '~~~ '
+prompt = '"" '
 
 puts "Hi #{name}."
 puts "I hear you're really #{description}."
@@ -12,8 +12,8 @@ puts "Where do you live #{name}?"
 puts prompt
 lives = $stdin.gets.chomp
 
-# a comma for puts is like using it twice
-puts "What kind of computer do you have?", prompt
+
+puts "What kind of computer do you have?", prompt # a comma for puts is like using it twice
 computer = $stdin.gets.chomp
 
 puts """
